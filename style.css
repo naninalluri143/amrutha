@@ -36,7 +36,7 @@
 }
 .name {
   width: 500px;
-  height: 35px;
+  height: 45px;
   border: 2px solid var(--color-white);
   background-color: var(--color-gray);
   top: 322px;
@@ -48,8 +48,8 @@
 .age {
   top: 427px;
   z-index: 3;
-  width: 239px;
-  height: 35px;
+  width: 230px;
+  height: 45px;
   color: var(--text-color);
   font-size: large;
 }
@@ -66,8 +66,8 @@
   top: 427px;
   left: 456px;
   z-index: 4;
-  width: 239px;
-  height: 41px;
+  width: 228px;
+  height: 45px;
   color: var(--text-color);
   font-size: large;
 }
@@ -76,7 +76,7 @@
   left: 177px;
   z-index: 5;
   width: 500px;
-  height: 35px;
+  height: 45px;
   color: var(--text-color);
   font-size: large;
 }
@@ -99,14 +99,14 @@
   border: 2px solid var(--color-white);
   background-color: var(--color-gray);
   height: 100px;
-  width: 500px;
+  width: 530px;
   top: 631px;
   left: 177px;
   border-radius: var(--br-xs);
   box-sizing: border-box;
   z-index: 7;
   color: var(--text-color);
-  font-size: large;
+  font-size: x-large;
 }
 .knee,
 .replacement {
@@ -252,3 +252,22 @@
   color: var(--color-white);
   font-family: var(--font-inter);
 }
+
+/*----------------------- input effects ------------------------------------- */
+.effect {
+  border: 1px solid #ccc;
+  padding: 7px 14px 9px;
+  transition: 0.4s;
+}
+.effect ~ .focus-border:before,
+.effect ~ .focus-border:after{content: ""; position: absolute; top: 0; right: 0; width: 0; height: 2px; background-color: #3399FF; transition: 0.2s; transition-delay: 0.2s;}
+.effect ~ .focus-border:after{top: auto; bottom: 0; right: auto; left: 0; transition-delay: 0.6s;}
+.effect ~ .focus-border i:before,
+.effect ~ .focus-border i:after{content: ""; position: absolute; top: 0; left: 0; width: 2px; height: 0; background-color: #3399FF; transition: 0.2s;}
+.effect ~ .focus-border i:after{left: auto; right: 0; top: auto; bottom: 0; transition-delay: 0.4s;}
+.effect:focus ~ .focus-border:before,
+.effect:focus ~ .focus-border:after{width: 100%; transition: 0.2s; transition-delay: 0.6s;}
+.effect:focus ~ .focus-border:after{transition-delay: 0.2s;}
+.effect:focus ~ .focus-border i:before,
+.effect:focus ~ .focus-border i:after{height: 100%; transition: 0.2s;}
+.effect:focus ~ .focus-border i:after{transition-delay: 0.4s;}
