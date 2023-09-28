@@ -1,0 +1,254 @@
+.web-page-background-1 {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  object-fit: cover;
+  z-index: 0;
+}
+.submit {
+  position: relative;
+  font-weight: 500;
+}
+.age,
+.cta,
+.name {
+  margin: 0 !important;
+  position: absolute;
+}
+.cta {
+  text-decoration: none;
+  top: 784px;
+  left: 333px;
+  border-radius: 18px;
+  background-color: #009746;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 7px 42px;
+  z-index: 1;
+  color: inherit;
+  font-family: var(--font-poppins);
+}
+.age,
+.name {
+  left: 177px;
+}
+.name {
+  width: 500px;
+  height: 35px;
+  border: 2px solid var(--color-white);
+  background-color: var(--color-gray);
+  top: 322px;
+  border-radius: var(--br-xs);
+  z-index: 2;
+  color: var(--text-color);
+  font-size: large;
+}
+.age {
+  top: 427px;
+  z-index: 3;
+  width: 239px;
+  height: 35px;
+  color: var(--text-color);
+  font-size: large;
+}
+.age,
+.contact,
+.sex {
+  border: 2px solid var(--color-white);
+  background-color: var(--color-gray);
+  border-radius: var(--br-xs);
+}
+.sex {
+  margin: 0 !important;
+  position: absolute;
+  top: 427px;
+  left: 456px;
+  z-index: 4;
+  width: 239px;
+  height: 41px;
+  color: var(--text-color);
+  font-size: large;
+}
+.contact {
+  top: 533px;
+  left: 177px;
+  z-index: 5;
+  width: 500px;
+  height: 35px;
+  color: var(--text-color);
+  font-size: large;
+}
+.contact,
+.place,
+.web-page-logo-1 {
+  margin: 0 !important;
+  position: absolute;
+}
+.web-page-logo-1 {
+  top: 97px;
+  left: 204px;
+  border-radius: 15px;
+  width: 450px;
+  height: 186.65px;
+  object-fit: cover;
+  z-index: 6;
+}
+.place {
+  border: 2px solid var(--color-white);
+  background-color: var(--color-gray);
+  height: 100px;
+  width: 500px;
+  top: 631px;
+  left: 177px;
+  border-radius: var(--br-xs);
+  box-sizing: border-box;
+  z-index: 7;
+  color: var(--text-color);
+  font-size: large;
+}
+.knee,
+.replacement {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 200;
+}
+.replacement {
+  top: 37.56%;
+  left: 1.82%;
+  font-size: 30px;
+}
+.just-for {
+  top: 49.77%;
+  left: 21.52%;
+  font-size: 36px;
+  background: linear-gradient(-90deg, #fff, rgba(255, 255, 255, 0.57));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.div,
+.just-for,
+.price {
+  position: absolute;
+}
+.div {
+  top: 64.79%;
+  left: 20%;
+  font-size: 62px;
+  font-weight: 800;
+  background: linear-gradient(-90deg, #fff, rgba(255, 255, 255, 0.78));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.price {
+  margin: 0 !important;
+  top: 851px;
+  left: 1397px;
+  width: 330px;
+  height: 213px;
+  z-index: 8;
+  font-size: 82px;
+}
+.phone-08632210123 {
+  position: absolute;
+  top: 0;
+  left: 4.26%;
+  font-weight: 500;
+}
+.amruthahospitalsgntgmailcom,
+.vector-icon {
+  position: absolute;
+  top: 0;
+  left: 44.39%;
+}
+.vector-icon {
+  height: 46.51%;
+  width: 2.35%;
+  top: 53.49%;
+  right: 97.65%;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.amruthahospitalscom {
+  position: absolute;
+  top: 55.81%;
+  left: 60.54%;
+  font-weight: 500;
+}
+.b,
+.b1 {
+  position: absolute;
+  top: 11px;
+  left: 261px;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-poppins);
+}
+.b1 {
+  top: -12px;
+  left: 190px;
+}
+.mditwitter-icon {
+  position: absolute;
+  top: 24px;
+  left: 35px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+}
+.amruthahospitalsguntur {
+  position: absolute;
+  top: 23px;
+  left: 73px;
+  font-weight: 500;
+}
+.vector-icon1 {
+  position: absolute;
+  height: 37.21%;
+  width: 3.59%;
+  top: 55.81%;
+  right: 93.05%;
+  bottom: 6.98%;
+  left: 3.36%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.rilinkedin-fill-icon {
+  position: absolute;
+  top: 24px;
+  left: 53px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+}
+.info {
+  position: absolute;
+  margin: 0 !important;
+  top: 912px;
+  left: 212px;
+  width: 446px;
+  height: 43px;
+  z-index: 9;
+  font-size: var(--font-size-base);
+}
+.amrutha-landing-page {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 1080px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  text-align: left;
+  font-size: 31.3px;
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
