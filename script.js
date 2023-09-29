@@ -1,26 +1,24 @@
-function sendMail() {
-  var params = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    age: document.getElementById("age").value,
-    sex : document.getElementById("sex").value,
-    adress : document.getElementById("adress").value
-  };
+document.getElementById("email-form").addEventListener("submit", "DOMContentLoaded", function (event) {
+  event.preventDefault(); // Prevent the default form submission
 
-  const serviceID = "service_id";
-  const templateID = "template_id";
+  const Name = document.getElementById("name").value; 
+  const Email = document.getElementById("email").value;
+  const age = document.getElementById("age").value;
+  const sex = document.getElementById("sex").value;
+  const adress = document.getElementById("adress").value;
 
-    emailjs.send(serviceID, templateID, params)
-    .then(res=>{
-        document.getElementById("name").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("age").value = "";
-        document.getElementById("sex").value = "";
-        document.getElementById("adress").value = "";
-        console.log(res);
-        alert("Your message sent successfully!!")
-
-    })
-    .catch(err=>console.log(err));
-
-}
+  // Use Email.js to send the email
+  emailjs.send("YOUR_EMAIL_SERVICE_ID", "YOUR_EMAIL_TEMPLATE_ID", {
+    name : Name,
+    to_email: Email,
+    Age : age,
+    Sex : sex,
+    Adress : adress 
+    
+  })
+  .then(function(response) {
+    console.log("Email sent successfully", response);
+  }, function(error) {
+    console.error("Email could not be sent", error);
+  });
+});
