@@ -14,7 +14,18 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700;800&display=swap"
     />
-    
+
+    <script src="/script.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("Public_key");
+      })();
+    </script>
   </head>
   <body>
     <div class="amrutha-landing-page">
@@ -23,44 +34,73 @@
         alt=""
         src="/Web Page Background.png"
       />
+      <form onclick="SendMail(); reset();">
+        <button class="cta" id="btn">
+          <div class="submit">Submit</div>
+        </button>
+        <div>
+          <input
+            class="name effect"
+            name="Name"
+            id="name"
+            placeholder="Your Name"
+            type="text"
+          />
+          <span class="focus-border">
+            <i></i>
+          </span>
+        </div>
+        <div>
+          <input
+            class="age effect"
+            name="Age"
+            id="age"
+            placeholder="Age"
+            type="number"
+          />
+          <span class="focus-border">
+            <i></i>
+          </span>
+        </div>
+        <div>
+          <input
+            class="sex effect"
+            name="Sex"
+            id="sex"
+            placeholder="Sex"
+            type="text"
+          />
+          <span class="focus-border">
+            <i></i>
+          </span>
+        </div>
+        <div>
+          <input
+            class="contact effect"
+            name="Contact"
+            id="email"
+            placeholder="Contact"
+            type="text"
+          />
+          <span class="focus-border">
+            <i></i>
+          </span>
+        </div>
 
-      <a class="cta" href="#">
-        <div class="submit">Submit</div>
-      </a>
-      <input
-        class="name effect"
-        name="Name"
-        id="name"
-        placeholder="Your Name"
-        type="text"
-      />
-      <span class="focus-border">
-        <i></i>
-      </span>
-
-      <input class="age effect" name="Age" id="age" placeholder="Age" type="number" />
-      <span class="focus-border">
-        <i></i>
-      </span>
-      <input class="sex effect" name="Sex" id="sex" placeholder="Sex" type="text" />
-      <span class="focus-border">
-        <i></i>
-      </span>
-      <input class="contact effect" name="Contact" id="contact" placeholder="Contact" type="text"/>
-      <span class="focus-border">
-        <i></i>
-      </span>
-
-      <img
-        class="web-page-logo-1"
-        alt=""
-        src="/Web Page Logo.png"
-      />
-
-      <textarea class="place effect" placeholder="Enter Address" rows="{20}"  id="address" cols="{20}"></textarea>
-      <span class="focus-border">
-        <i></i>
-      </span>
+        <img class="web-page-logo-1" alt="" src="/Web Page Logo.png" />
+        <div>
+          <textarea
+            class="place effect"
+            placeholder="Enter Address"
+            rows="{20}"
+            id="address"
+            cols="{20}"
+          ></textarea>
+          <span class="focus-border">
+            <i></i>
+          </span>
+        </div>
+      </form>
       <!--price-->
       <div class="price">
         <div class="knee">Knee</div>

@@ -7,7 +7,11 @@
 }
 .submit {
   position: relative;
+  font-size: 31.3px;
   font-weight: 500;
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: left;
 }
 .age,
 .cta,
@@ -16,19 +20,19 @@
   position: absolute;
 }
 .cta {
-  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 7px 42px;
+  background-color: #009746;
   top: 784px;
   left: 333px;
   border-radius: 18px;
-  background-color: #009746;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 7px 42px;
   z-index: 1;
-  color: inherit;
-  font-family: var(--font-poppins);
+  width: 190px;
 }
 .age,
 .name {
@@ -48,7 +52,7 @@
 .age {
   top: 427px;
   z-index: 3;
-  width: 230px;
+  width: 228px;
   height: 45px;
   color: var(--text-color);
   font-size: large;
@@ -66,7 +70,7 @@
   top: 427px;
   left: 456px;
   z-index: 4;
-  width: 228px;
+  width: 225px;
   height: 45px;
   color: var(--text-color);
   font-size: large;
