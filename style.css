@@ -5,28 +5,16 @@
   object-fit: cover;
   z-index: 0;
 }
-.submit {
-  position: relative;
-  font-size: 31.3px;
-  font-weight: 500;
-  font-family: var(--font-poppins);
-  color: var(--color-white);
-  text-align: left;
-}
-.age,
-.cta,
-.name {
-  margin: 0 !important;
-  position: absolute;
-}
 .cta {
   border: 0;
   font-weight: 500;
   font-family: var(--font-poppins);
   font-size: 31.3px;
   background-color: #009746;
-  top: 784px;
-  left: 333px;
+  margin: 0 !important;
+  position: absolute;
+  top: 890px;
+  left: 323px;
   border-radius: 18px;
   display: flex;
   flex-direction: row;
@@ -35,85 +23,107 @@
   padding: 7px 42px;
   z-index: 1;
   color: var(--text-color);
-  cursor: pointer;
 }
 .age,
-.name {
-  left: 177px;
-}
-.name {
-  width: 500px;
-  height: 45px;
+.name,
+.sex {
   border: 2px solid var(--color-white);
   background-color: var(--color-gray);
-  top: 322px;
   border-radius: var(--br-xs);
+}
+.name {
+  margin: 0 !important;
+  position: absolute;
+  top: 265px;
+  left: 177px;
   z-index: 2;
+  width: 500px;
+  height: 45px;
   color: var(--text-color);
   font-size: large;
 }
+.age,
+.sex {
+  top: 353px;
+}
 .age {
-  top: 427px;
+  margin: 0 !important;
+  position: absolute;
+  left: 177px;
   z-index: 3;
   width: 228px;
   height: 45px;
   color: var(--text-color);
   font-size: large;
 }
-.age,
-.contact,
 .sex {
-  border: 2px solid var(--color-white);
-  background-color: var(--color-gray);
-  border-radius: var(--br-xs);
-}
-.sex {
-  margin: 0 !important;
-  position: absolute;
-  top: 427px;
-  left: 456px;
+  left: 452px;
   z-index: 4;
-  width: 225px;
+  width: 228px;
   height: 45px;
   color: var(--text-color);
   font-size: large;
 }
+.contact,
+.sex,
+.web-page-logo-1 {
+  position: absolute;
+  margin: 0 !important;
+}
 .contact {
-  top: 533px;
+  border: 2px solid var(--color-white);
+  background-color: var(--color-gray);
+  top: 441px;
   left: 177px;
+  border-radius: var(--br-xs);
   z-index: 5;
   width: 500px;
   height: 45px;
   color: var(--text-color);
   font-size: large;
 }
-.contact,
-.place,
 .web-page-logo-1 {
-  margin: 0 !important;
-  position: absolute;
-}
-.web-page-logo-1 {
-  top: 97px;
-  left: 204px;
+  top: 49px;
+  left: 209px;
   border-radius: 15px;
   width: 450px;
   height: 186.65px;
   object-fit: cover;
   z-index: 6;
 }
+.aadhar-number,
+.phone,
 .place {
   border: 2px solid var(--color-white);
   background-color: var(--color-gray);
-  height: 100px;
-  width: 530px;
-  top: 631px;
+  margin: 0 !important;
+  position: absolute;
   left: 177px;
   border-radius: var(--br-xs);
+}
+.place {
+  height: auto;
+  width: auto;
+  top: 530px;
   box-sizing: border-box;
   z-index: 7;
+  width: 505px;
+  height: 130px;
   color: var(--text-color);
-  font-size: x-large;
+  font-size: large;
+}
+.aadhar-number,
+.phone {
+  top: 690px;
+  z-index: 8;
+  width: 500px;
+  height: 45px;
+  color: var(--text-color);
+  font-size: large;
+}
+.aadhar-number {
+  top: 790px;
+  z-index: 9;
 }
 .knee,
 .replacement {
@@ -155,8 +165,7 @@
   left: 1397px;
   width: 330px;
   height: 213px;
-  z-index: 8;
-  font-size: 82px;
+  z-index: 10;
 }
 .phone-08632210123 {
   position: absolute;
@@ -236,11 +245,11 @@
 .info {
   position: absolute;
   margin: 0 !important;
-  top: 912px;
+  top: 970px;
   left: 212px;
   width: 446px;
   height: 43px;
-  z-index: 9;
+  z-index: 11;
   font-size: var(--font-size-base);
 }
 .amrutha-landing-page {
@@ -255,26 +264,7 @@
   justify-content: flex-start;
   gap: 10px;
   text-align: left;
-  font-size: 31.3px;
+  font-size: 82px;
   color: var(--color-white);
   font-family: var(--font-inter);
 }
-
-/*----------------------- input effects ------------------------------------- */
-.effect {
-  border: 1px solid #ccc;
-  padding: 7px 14px 9px;
-  transition: 0.4s;
-}
-.effect ~ .focus-border:before,
-.effect ~ .focus-border:after{content: ""; position: absolute; top: 0; right: 0; width: 0; height: 2px; background-color: #3399FF; transition: 0.2s; transition-delay: 0.2s;}
-.effect ~ .focus-border:after{top: auto; bottom: 0; right: auto; left: 0; transition-delay: 0.6s;}
-.effect ~ .focus-border i:before,
-.effect ~ .focus-border i:after{content: ""; position: absolute; top: 0; left: 0; width: 2px; height: 0; background-color: #3399FF; transition: 0.2s;}
-.effect ~ .focus-border i:after{left: auto; right: 0; top: auto; bottom: 0; transition-delay: 0.4s;}
-.effect:focus ~ .focus-border:before,
-.effect:focus ~ .focus-border:after{width: 100%; transition: 0.2s; transition-delay: 0.6s;}
-.effect:focus ~ .focus-border:after{transition-delay: 0.2s;}
-.effect:focus ~ .focus-border i:before,
-.effect:focus ~ .focus-border i:after{height: 100%; transition: 0.2s;}
-.effect:focus ~ .focus-border i:after{transition-delay: 0.4s;}
