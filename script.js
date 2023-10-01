@@ -20,24 +20,26 @@
         phone,
         aadhaar
     };
+console.log(inputData);
+alert('Email sent successfully');
 
     // Make a POST request to your NestJS backend
-    fetch('http://localhost:3000', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            // Add any necessary headers (e.g., authentication token) here
-        },
-        body: JSON.stringify(inputData), // Send input data as JSON
-    })
-    .then(response => response.json())
-    .then(data => {
-        // Handle the response data from the backend
-        const dataContainer = document.getElementById('dataContainer');
-        dataContainer.innerHTML = `<p>Data from Backend: ${JSON.stringify(data)}</p>`;
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        // Handle errors here (e.g., display an error message to the user)
-    });
+//     fetch('http://localhost:3000', {
+//         method: 'POST',
+//         headers: {
+//             'Content-Type': 'application/json',
+//             // Add any necessary headers (e.g., authentication token) here
+//         },
+//         body: JSON.stringify(inputData), // Send input data as JSON
+//     })
+//     .then(response => response.json())
+//     .then(data => {
+//         // Handle the response data from the backend
+//         const dataContainer = document.getElementById('dataContainer');
+//         dataContainer.innerHTML = `<p>Data from Backend: ${JSON.stringify(data)}</p>`;
+//     })
+//     .catch(error => {
+//         console.error('Error:', error);
+//         // Handle errors here (e.g., display an error message to the user)
+//     });
 });
