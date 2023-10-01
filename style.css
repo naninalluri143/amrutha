@@ -23,6 +23,7 @@
   padding: 7px 42px;
   z-index: 1;
   color: var(--text-color);
+  cursor: pointer;
 }
 .age,
 .name,
@@ -268,3 +269,4 @@
   color: var(--color-white);
   font-family: var(--font-inter);
 }
+

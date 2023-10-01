@@ -15,8 +15,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700;800&display=swap"
     />
     <link rel="icon" href="Web Page Logo.png" type="image/png">
-
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   </head>
   <body>
     <div class="amrutha-landing-page">
@@ -115,8 +113,8 @@
         <input
           class="aadhar-number effect"
           name="Aadhar"
-          id="aadhar"
-          placeholder="Enter Aadhar Number"
+          id="aadhaar"
+          placeholder="Enter Aadhaar Number"
           type="text"
         />
         <span class="focus-border">
@@ -153,35 +151,8 @@
         />
       </div>
     </div>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        emailjs.init("Public_key");
-  
-        document.getElementById("email-form").addEventListener("submit", function (event) {
-          event.preventDefault(); // Prevent the default form submission
-  
-          const name = document.getElementById("name").value;
-          const email = document.getElementById("email").value;
-          const age = document.getElementById("age").value;
-          const sex = document.getElementById("sex").value;
-          const address = document.getElementById("address").value;
-  
-          // Use Email.js to send the email
-          emailjs.send("Service_Key", "Template_Key", {
-            name: name,
-            to_email: email,
-            age: age,
-            sex: sex,
-            address: address,
-          })
-          .then(function(response) {
-            console.log("Email sent successfully", response);
-          })
-          .catch(function(error) {
-            console.error("Email could not be sent", error);
-          });
-        });
-      });
-    </script>
+    <!-- Display response from backend -->
+<div id="dataContainer"></div>
+    <script src="script.js"></script>
   </body>
 </html>
