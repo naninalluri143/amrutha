@@ -22,7 +22,7 @@
     };
 
     // Make a POST request to your NestJS backend
-    fetch('http://localhost:3000', {
+    fetch('http://localhost:3000/api/v1/contact', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
