@@ -80,7 +80,6 @@ document.getElementById('email-form').addEventListener('submit', async (e) => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(inputData), // Send input data as JSON
-                  alert('message sent successfully!')
       });
   
       if (!response.ok) {
