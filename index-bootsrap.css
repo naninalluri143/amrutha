@@ -1,0 +1,86 @@
+.bg-green {
+  background-image: url("./gradient-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-old-man {
+  background-image: url("./old-man.png");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.form-input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 0 10px;
+  background: transparent;
+  border: 2px solid white;
+}
+.form-input::placeholder {
+  color: white;
+}
+.img {
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.bg-trasparent {
+  background-color: transparent !important;
+}
+
+.top-20per {
+  top: 20%;
+}
+.price {
+  position: absolute;
+  inset: 0;
+  top: 65%;
+  left: 30%;
+}
+.price * {
+  margin: 0;
+  padding: 0;
+}
+.knee {
+  font-weight: 200;
+}
+.replacement {
+  font-size: 30px;
+}
+.just-for-container {
+  position: absolute;
+  left: 20%;
+  top: 45%;
+}
+.just-for {
+  font-size: 3rem;
+  font-weight: 1000;
+  background: linear-gradient(-90deg, #fff, rgba(255, 255, 255, 0.57));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.div {
+  font-size: 3rem;
+  background: linear-gradient(-90deg, #fff, rgba(255, 255, 255, 0.78));
+  font-weight: 1000;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.vh-custom-100{
+    height: calc(100vh - 100px);
+}
+.flex-basic{
+    flex-basis: 100%;
+}
+@media (min-width: 1200) {
+    .vh-lg-100{
+        height: calc(100vh - 3px) !important;
+    }
+}
